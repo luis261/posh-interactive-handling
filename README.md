@@ -8,7 +8,7 @@
   - then just pipe that into the function
   - thus, the verbosity/amount of required overhead in terms of syntax is kept to a minimum
 
-https://raw.githubusercontent.com/luis261/posh-interactive-handling/main/interactive-handling-usage-example.mp4
+https://github.com/luis261/posh-interactive-handling/assets/72552948/6f2299eb-2621-4ad0-ba50-5e6b25a92ce8
 
 ## Why would anyone ever want that?
 First of all, it can be **very useful when prototyping larger scripts**. Besides that though, the general applicability of the described functionality is admittedly somewhat niche.
