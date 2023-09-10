@@ -12,7 +12,7 @@ TODO insert mp4 showing "live" example usage
 
 ## Why would anyone ever want that?
 First of all, it can be **very useful when prototyping larger scripts**. Besides that though, the general applicability of the described functionality is admittedly somewhat niche.
-For example, you would not want your Webserver to suspend the execution of your code in case of an error and make the user wait for someone to manually intervene, right? Instead you'd just expect the user to receive an error code, as well as ideally receiving a report via some sort of monitoring construct so the issue can be taken care of asynchronously irrespective of the direct response to the request that caused the issue/made the bug apparent (I hope you're using something a bit more "proper" than Powershell to run Webservices anyway).
+For example, you would not want your Webserver to suspend the execution of your code in case of an error and make the user wait for someone to manually intervene, right? Instead you'd just expect the user to receive an error code, as well as ideally receiving a report via some sort of monitoring construct so the issue can be taken care of asynchronously irrespective of the direct response to the request that caused the issue/made the bug apparent (I hope you're using something a bit more "proper" than Powershell to run Webservices anyway 😅).
 The same is true for a good portion of the typical automation scripts Ops personnel uses for day-to-day automation tasks right?
 But in my experience, there is also another kind of script, often just as pervasive, at least in terms of the time spent on running and maintaining them.
 The kind I'm talking about is **highly specific to a certain task and usually gets triggered manually** instead of having an automated binding to the consumer; it **might only get executed every few weeks or even months. But when it does run, it has to work and help you perform your duty reliably. Especially when dealing with long scripts interacting with unreliable dependencies undergoing frequent and often unregulated changes, no matter how defensively you write your code, they might still break every once in a while**. This is where the proposed interactive error handling functionality can save the day by preventing repeated runs of long scripts, which is especially important in case they have side effects with serious implications.
@@ -32,7 +32,7 @@ below are a few **examples of scripts I consider to be candidates that could par
 ```
 
 ## Caveats
-- the current implementation is quite hacky (though arguably that's what powershell is all about)
+- the current implementation is quite hacky (though arguably that's what powershell is all about 😝)
 - it **can't handle multi-line commands**
 
 ## What's next
