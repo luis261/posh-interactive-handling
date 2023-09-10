@@ -9,6 +9,10 @@
   - thus, the verbosity/amount of required overhead in terms of syntax is kept to a minimum
 
 > ⚠️ I am aware of the `Suspend` option for `$ErrorActionPreference`<br> however, as described [here](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_preference_variables?view=powershell-7.3#erroractionpreference) it isn't a valid value for the `$ErrorActionPreference` variable<br> instead, that option is intended for per-command use, not for use as saved preference, though not every command supports this option ..
+<br>  
+
+> 🛑 apparently, there is a builtin `Inquire` option for `$ErrorActionPreference` which basically replicates the described behavior ([with a bit of a misleading/incomplete description](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_preference_variables?view=powershell-7.3#erroractionpreference)). However, when trying it out, I did have some minor issues with it, with an abundance of different options on how to proceed, some of which behave differently than expected ..
+> it could be argued you're still better off using this custom implementation for usability reasons (e.g. clearer options to choose from, easy access to commands executed by the script via up arrow history, better output formatting etc.) **as long as you don't have/want multi-line commands**
 
 https://github.com/luis261/posh-interactive-handling/assets/72552948/6f2299eb-2621-4ad0-ba50-5e6b25a92ce8
 
