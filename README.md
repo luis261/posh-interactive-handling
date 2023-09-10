@@ -8,8 +8,7 @@
   - then just pipe that into the function
   - thus, the verbosity/amount of required overhead in terms of syntax is kept to a minimum
 
-TODO insert mp4 showing "live" example usage
-![example usage video](./interactive_handling_usage_example.mp4)
+https://github.com/luis261/posh-interactive-handling/blob/main/interactive\_handling\_usage\_example.mp4
 
 ## Why would anyone ever want that?
 First of all, it can be **very useful when prototyping larger scripts**. Besides that though, the general applicability of the described functionality is admittedly somewhat niche.
