@@ -1,4 +1,4 @@
-# Interactive error handling for your PowerShell script
+# Interactive error handling for your PowerShell script (block)
 - `Handle-Interactively` provides you with a **simple option for suspending a script whenever an error occurs**
 - it then **allows you to jump in interactively** to rectify the situation and let the **script continue where it left off afterwards** (without having to start it anew)
 - you don't have to pipe each command that should be wrapped this way into the function provided by me individually
